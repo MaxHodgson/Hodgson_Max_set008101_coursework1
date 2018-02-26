@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel = "stylesheet" href = "Stylesheets/Ciphers.css">
+		
+		<title> Web Tech 40274665 </title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	</head>
+<body>
+
+<img class ="Header" src="Images/Header.jpg" alt="Header">
+
+<ul>
+  <li><a href="Index.html">Home</a></li>
+  <li><a class="active" href="Ciphers.html">Ciphers</a></li>
+  <li><a href="Design.html">Design</a></li>
+
+</ul>
+
+<div class="Morse">
+
+<h1> - MORSE CODE - </h1>
+
+<h3> about: </h3>
+
+<img class="bodyImage" src="Images/morse.jpg" alt="Morse code">
+
+<p>Morse code is a method of transmitting text information as a series of on-off tones, lights, or clicks that can be directly understood by a skilled listener or observer without special equipment. 
+It is named for Samuel F. B. Morse, an inventor of the telegraph.
+
+</p>
+<p>
+The International Morse Code encodes the ISO basic Latin alphabet, some extra Latin letters, the Arabic numerals and a small
+</br>
+set of punctuation and procedural signals (prosigns) as standardized sequences of short and long signals called "dots" and "dashes"
+ or "dots" and "dash", as in amateur radio practice. Because many non-English natural languages use more than the 26 Roman letters, extensions 
+ to the Morse alphabet exist for those languages.
+</p> 
+
+<img src="Images/translate.jpg" alt="Translation table" height="180px" width="35%">
+
+
+<p>
+Just type a sentence or phrase into the box below and then press the "<b>Translate</b>" button.
+</p>
+
+<h4>Type a sentence or phrase</h4>
+<input id='inputMorse' />
+<button id='buttonMorse'>Translate</button>
+<output id='outputMorse'></output>
+<script type="text/javascript" src="JS/Morse.js"></script>
+
+</div>
+
+<hr></hr>
+
+<div class="R13">
+
+<h1> - ROT13 - </h1>
+
+<p>
+ROT13 or 'Rotate by 13 places' is a simple letter substitution cipher. The process of which ignores the first letter of each word and the following letters after it are replaced with the letter that appears 13 positions after it in the alphabet.
+</p>
+
+<p>
+Because there are 26 letters (2×13) in the basic Latin alphabet, ROT13 is its own inverse; that is, to undo ROT13, the same algorithm is 
+applied, so the same action can be used for encoding and decoding. 
+</br>
+The algorithm provides virtually no cryptographic security, and is often cited as a canonical example of weak encryption.
+</p>
+
+<p>
+Just type a sentence or phrase in <u>English</u>  <b>or</b>  <u>ROT13</u> into the box below.
+</p>
+
+<h4>Type ROT13 here</h4>
+<input id="inputr13" />
+<button onclick ="encode()" id ="buttonr13">Translate</button >
+<output id="outputr13"></output>
+
+<script type="text/javascript" src="JS/rot13.js"></script>
+
+</div>
+
+</body>
+</html>
